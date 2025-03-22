@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { useSearchParams, useRouter } from "next/navigation"
-import { ArrowLeft, Github } from "lucide-react"
+import { ArrowLeft, Github, VideoOff } from "lucide-react"
 import { parseGitHubUrl } from "@/lib/github-utils"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -38,6 +38,88 @@ export default function RepoPage() {
   const handleBackClick = () => {
     router.push("/")
   }
+
+  const script = `You gave a repo called ${repoName}. Onboard yes.`
+  const postOptions = {
+    method: 'POST',
+    headers: {
+      'x-api-key': process.env.NEXT_PUBLIC_TAVUS_API_KEY || '',
+      'Content-Type': 'application/json'
+    },
+    body: `{
+      "background_url":"",
+      "replica_id":"rb17cf590e15",
+      "script":"${script}",
+      "video_name":""
+      }`
+  };
+  const [videoId, setVideoId] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (repoName) {
+      fetch('https://tavusapi.com/v2/videos', postOptions)
+        .then(response => response.json())
+        .then(response => {
+          console.log(response);
+          if (response.video_id) {
+            setVideoId(response.video_id);
+          }
+        })
+        .catch(err => console.error(err));
+    }
+  }, [repoName]);
+
+  let streamLink = "";
+
+  useEffect(() => {
+    if (!videoId) return;
+    console.log(`Got video id: ${videoId}`)
+
+    const getOptions = {
+      method: 'GET',
+      headers: {
+        'x-api-key': process.env.NEXT_PUBLIC_TAVUS_API_KEY || ''
+      }
+    };
+
+    const checkVideoStatus = () => {
+      fetch(`https://tavusapi.com/v2/videos/${videoId}`, getOptions)
+        .then(response => response.json())
+        .then(response => {
+          console.log(response);
+          //
+          // streamLink = "https://stream.mux.com/gxok3F14154gRG6PtQcRe4QvtCEPw71JESGrYhwRiA4.m3u8"
+          // clearInterval(intervalId);
+          //
+          if (response.status === 'ready') {
+            streamLink = response.stream_url;
+            console.log("lasldaldsla", streamLink, response);
+            clearInterval(intervalId);
+          }
+        })
+        .catch(err => console.error(err));
+    };
+
+    const intervalId = setInterval(() => {
+      console.log("Checking video status...");
+      const ready = checkVideoStatus();
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  }, [videoId]);
+
+  useEffect(() => {
+    const waitForStreamLink = () => {
+      const intervalId = setInterval(() => {
+        if (streamLink) {
+          console.log("Stream Link:", streamLink);
+          clearInterval(intervalId);
+        }
+      }, 1000);
+    };
+
+    waitForStreamLink();
+  }, []);
 
   return (
     <div className="container mx-auto py-10 px-4">
