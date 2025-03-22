@@ -3,11 +3,11 @@ import json
 import os
 import re
 from urllib.parse import urlparse
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import google.generativeai as genai  # Updated Gemini import
 
 # Load environment variables
-load_dotenv()
+#load_dotenv()
 
 # Set up API keys
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
@@ -128,7 +128,8 @@ def summarize_repo(files_data):
     print("🔍 Generating summary using Gemini AI...")
     # Configure the Gemini API
     genai.configure(api_key=GEMINI_API_KEY)
-    
+   
+
     try:
         # Create a model instance using standard Gemini model
         model = genai.GenerativeModel('models/gemini-2.0-flash-lite')
@@ -138,12 +139,14 @@ def summarize_repo(files_data):
 
         # Prepare the input for Gemini
         prompt = f"""
-        The following are files from a GitHub repo. Summarize what the repo does.
-        Provide:
-        - Project purpose by file
-        - Key functionalities
-        - Tech stack/packages
-        - How to use it
+        The following are files from a GitHub repo. Analyze the usage of packages used in different parts of the repo,
+        categorizing by frontend/backend/etc. Summarize what are the major functionalities/APIs of packages that are 
+        used in different parts of the repo.
+        Output in a valid json format with a list of objects with the following fields:
+        - Package name
+        - Package version
+        - Functionality/APIs
+        - which part of the repo it is used in
 
         Files:
         {json.dumps(files_data, indent=2)}
@@ -151,6 +154,10 @@ def summarize_repo(files_data):
 
         # Generate content with the updated API
         response = model.generate_content(prompt)
+        
+        print('writing json to dump.json');
+        with open('dump.json', 'w') as f:
+            json.dump(json.loads(response.parts[0].text.strip('```')[4:]), f)
         if response:
             print("✅ Summary generated successfully.")
             
