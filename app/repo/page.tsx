@@ -14,7 +14,7 @@ export default function RepoPage() {
   const url = searchParams.get("url")
   const [repoName, setRepoName] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
-  const streamUrl = "https://stream.mux.com/AWWy02FYNOe02MWgtEBJUsXoNHHGyhR8DYtHBZLBMeGdI.m3u8"
+  const streamUrl = "https://stream.mux.com/yh6vdXl3XC01pbHGaXsETw9WCAKlkpE2f5LRQETlcCZA.m3u8"
 
   useEffect(() => {
     if (!url) {
