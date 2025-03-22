@@ -1,0 +1,1109 @@
+{
+  "dependencies": [
+    {
+      "Package name": "vite",
+      "Package version": "^5.4.1",
+      "Functionality/APIs": "A build tool that aims to provide a faster and leaner development experience for modern web projects.  Handles bundling, hot module replacement (HMR), and development server.",
+      "which part of the repo it is used in": "Frontend (development and build process)",
+      "documentation": [
+        {
+          "title": "Vite Documentation",
+          "url": "https://vitejs.dev/guide/",
+          "explanation": "Crucial for understanding Vite's configuration, build process, and HMR features, allowing for efficient frontend development."
+        }
+      ]
+    },
+    {
+      "Package name": "typescript",
+      "Package version": "^5.5.3",
+      "Functionality/APIs": "A typed superset of JavaScript that compiles to plain JavaScript. Provides static typing, interfaces, and other features to improve code maintainability and error detection.",
+      "which part of the repo it is used in": "Frontend (codebase)",
+      "documentation": [
+        {
+          "title": "TypeScript Documentation",
+          "url": "https://www.typescriptlang.org/docs/",
+          "explanation": "Essential for learning TypeScript syntax, features, and best practices to write maintainable and error-free frontend code."
+        }
+      ]
+    },
+    {
+      "Package name": "react",
+      "Package version": "^18.3.1",
+      "Functionality/APIs": "A JavaScript library for building user interfaces. Provides components, virtual DOM, and a declarative programming model.",
+      "which part of the repo it is used in": "Frontend (UI components and application structure)",
+      "documentation": [
+        {
+          "title": "React Documentation",
+          "url": "https://react.dev/learn",
+          "explanation": "Fundamental for understanding React's component model, hooks, and rendering lifecycle for building dynamic UIs."
+        }
+      ]
+    },
+    {
+      "Package name": "react-dom",
+      "Package version": "^18.3.1",
+      "Functionality/APIs": "Provides methods to interact with the DOM in React applications, such as rendering components.",
+      "which part of the repo it is used in": "Frontend (rendering React components into the DOM)",
+      "documentation": [
+        {
+          "title": "ReactDOM Documentation",
+          "url": "https://react.dev/reference/react-dom",
+          "explanation": "Needed to understand how React components are mounted, updated, and unmounted from the browser's DOM."
+        }
+      ]
+    },
+    {
+      "Package name": "eslint",
+      "Package version": "^9.9.0",
+      "Functionality/APIs": "A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. Helps enforce coding style and prevent bugs.",
+      "which part of the repo it is used in": "Frontend (code linting)",
+      "documentation": [
+        {
+          "title": "ESLint Documentation",
+          "url": "https://eslint.org/docs/latest/",
+          "explanation": "Required for configuring ESLint rules and settings to enforce code style and prevent errors in the frontend codebase."
+        }
+      ]
+    },
+    {
+      "Package name": "eslint-plugin-react-hooks",
+      "Package version": "^5.1.0-rc.0",
+      "Functionality/APIs": "ESLint plugin that checks the rules of Hooks in React components.  Enforces best practices when using React Hooks.",
+      "which part of the repo it is used in": "Frontend (code linting)",
+      "documentation": [
+        {
+          "title": "eslint-plugin-react-hooks Documentation",
+          "url": "https://www.npmjs.com/package/eslint-plugin-react-hooks",
+          "explanation": "Important for ensuring that React Hooks are used correctly, preventing common errors and performance issues."
+        }
+      ]
+    },
+    {
+      "Package name": "eslint-plugin-react-refresh",
+      "Package version": "^0.4.9",
+      "Functionality/APIs": "An ESLint plugin for fast refresh (HMR) in React.  Helps provide immediate feedback during development.",
+      "which part of the repo it is used in": "Frontend (code linting)",
+      "documentation": [
+        {
+          "title": "eslint-plugin-react-refresh Documentation",
+          "url": "https://www.npmjs.com/package/eslint-plugin-react-refresh",
+          "explanation": "Key to properly configuring and utilizing the plugin for optimized hot module replacement during React development."
+        }
+      ]
+    },
+    {
+      "Package name": "@typescript-eslint/eslint-plugin",
+      "Package version": "^8.0.1",
+      "Functionality/APIs": "An ESLint plugin that provides linting rules specifically for TypeScript code.",
+      "which part of the repo it is used in": "Frontend (code linting)",
+      "documentation": [
+        {
+          "title": "@typescript-eslint/eslint-plugin Documentation",
+          "url": "https://typescript-eslint.io/docs/linting/rules",
+          "explanation": "Necessary for understanding and configuring TypeScript-specific linting rules within the ESLint setup."
+        }
+      ]
+    },
+    {
+      "Package name": "@typescript-eslint/parser",
+      "Package version": "^8.0.1",
+      "Functionality/APIs": "An ESLint parser that allows ESLint to parse TypeScript code.",
+      "which part of the repo it is used in": "Frontend (code linting)",
+      "documentation": [
+        {
+          "title": "@typescript-eslint/parser Documentation",
+          "url": "https://typescript-eslint.io/docs/parsers/",
+          "explanation": "Required for setting up ESLint to correctly parse and lint TypeScript code in the project."
+        }
+      ]
+    },
+    {
+      "Package name": "tailwindcss",
+      "Package version": "^3.4.11",
+      "Functionality/APIs": "A utility-first CSS framework for rapidly building custom designs.",
+      "which part of the repo it is used in": "Frontend (styling)",
+      "documentation": [
+        {
+          "title": "Tailwind CSS Documentation",
+          "url": "https://tailwindcss.com/docs",
+          "explanation": "Essential for understanding Tailwind's utility classes and configuration options for styling the frontend components."
+        }
+      ]
+    },
+    {
+      "Package name": "postcss",
+      "Package version": "^8.4.47",
+      "Functionality/APIs": "A tool for transforming CSS with JavaScript plugins. Used as part of the Tailwind CSS build process.",
+      "which part of the repo it is used in": "Frontend (styling, build process)",
+      "documentation": [
+        {
+          "title": "PostCSS Documentation",
+          "url": "https://postcss.org/",
+          "explanation": "Understanding PostCSS configuration and plugin usage is crucial for customizing Tailwind CSS."
+        }
+      ]
+    },
+    {
+      "Package name": "autoprefixer",
+      "Package version": "^10.4.20",
+      "Functionality/APIs": "A PostCSS plugin that automatically adds vendor prefixes to CSS rules.",
+      "which part of the repo it is used in": "Frontend (styling, build process)",
+      "documentation": [
+        {
+          "title": "Autoprefixer Documentation",
+          "url": "https://github.com/postcss/autoprefixer",
+          "explanation": "Essential for configuring browser compatibility and understanding how prefixes are added."
+        }
+      ]
+    },
+    {
+      "Package name": "@vitejs/plugin-react-swc",
+      "Package version": "^3.5.0",
+      "Functionality/APIs": "A Vite plugin for using SWC (Speedy Web Compiler) for fast React development, especially for bundling.",
+      "which part of the repo it is used in": "Frontend (build process)",
+      "documentation": [
+        {
+          "title": "Vite React SWC Plugin Documentation",
+          "url": "https://github.com/vitejs/vite-plugin-react-swc",
+          "explanation": "Needed for optimizing React builds with SWC and configuring plugin options within Vite."
+        }
+      ]
+    },
+    {
+      "Package name": "@hookform/resolvers",
+      "Package version": "^3.9.0",
+      "Functionality/APIs": "Integrates various validation libraries with react-hook-form, for form validation.",
+      "which part of the repo it is used in": "Frontend (form validation)",
+      "documentation": [
+        {
+          "title": "React Hook Form Resolvers Documentation",
+          "url": "https://www.react-hook-form.com/api/useform/resolver/",
+          "explanation": "Crucial for integrating validation schemas (e.g., Zod, Yup) with React Hook Form."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-accordion",
+      "Package version": "^1.2.0",
+      "Functionality/APIs": "Provides accessible and customizable accordion UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Accordion Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/accordion",
+          "explanation": "Essential for understanding component props, styling, and accessibility features."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-alert-dialog",
+      "Package version": "^1.1.1",
+      "Functionality/APIs": "Provides accessible and customizable alert dialog UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Alert Dialog Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/alert-dialog",
+          "explanation": "Important for understanding how to implement accessible and customizable alert dialogs."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-aspect-ratio",
+      "Package version": "^1.1.0",
+      "Functionality/APIs": "Provides an aspect ratio UI component.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Aspect Ratio Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/aspect-ratio",
+          "explanation": "Needed for correctly implementing and customizing the aspect ratio component."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-avatar",
+      "Package version": "^1.1.0",
+      "Functionality/APIs": "Provides an avatar UI component.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Avatar Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/avatar",
+          "explanation": "Essential for understanding how to use and customize the avatar component."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-checkbox",
+      "Package version": "^1.1.1",
+      "Functionality/APIs": "Provides an accessible and customizable checkbox UI component.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Checkbox Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/checkbox",
+          "explanation": "Crucial for creating accessible and customizable checkbox components."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-collapsible",
+      "Package version": "^1.1.0",
+      "Functionality/APIs": "Provides an accessible and customizable collapsible UI component.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Collapsible Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/collapsible",
+          "explanation": "Needed to understand how to implement accessible collapsible UI elements."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-context-menu",
+      "Package version": "^2.2.1",
+      "Functionality/APIs": "Provides accessible and customizable context menu UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Context Menu Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/context-menu",
+          "explanation": "Essential for implementing and customizing context menus with accessibility features in the frontend."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-dialog",
+      "Package version": "^1.1.2",
+      "Functionality/APIs": "Provides accessible and customizable dialog UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Dialog Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/dialog",
+          "explanation": "Crucial for implementing accessible and customizable dialogs for user interactions in the frontend."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-dropdown-menu",
+      "Package version": "^2.1.1",
+      "Functionality/APIs": "Provides accessible and customizable dropdown menu UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Dropdown Menu Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/dropdown-menu",
+          "explanation": "Necessary for building accessible and customizable dropdown menus for navigation and actions in the frontend."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-hover-card",
+      "Package version": "^1.1.1",
+      "Functionality/APIs": "Provides accessible and customizable hover card UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Hover Card Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/hover-card",
+          "explanation": "Important for implementing informative and accessible hover card tooltips in the frontend."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-label",
+      "Package version": "^2.1.0",
+      "Functionality/APIs": "Provides accessible and customizable label UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Label Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/label",
+          "explanation": "Essential for creating accessible form labels and associating them with input elements in the frontend."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-menubar",
+      "Package version": "^1.1.1",
+      "Functionality/APIs": "Provides accessible and customizable menubar UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Menubar Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/menubar",
+          "explanation": "Required for implementing accessible and customizable menubars for application navigation in the frontend."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-navigation-menu",
+      "Package version": "^1.2.0",
+      "Functionality/APIs": "Provides accessible and customizable navigation menu UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Navigation Menu Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/navigation-menu",
+          "explanation": "Necessary for creating accessible and customizable navigation menus for website structure in the frontend."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-popover",
+      "Package version": "^1.1.1",
+      "Functionality/APIs": "Provides accessible and customizable popover UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Popover Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/popover",
+          "explanation": "Crucial for implementing accessible and customizable popovers for displaying additional content in the frontend."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-progress",
+      "Package version": "^1.1.0",
+      "Functionality/APIs": "Provides accessible and customizable progress UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Progress Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/progress",
+          "explanation": "Important for implementing accessible and customizable progress indicators for loading states in the frontend."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-radio-group",
+      "Package version": "^1.2.0",
+      "Functionality/APIs": "Provides accessible and customizable radio group UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Radio Group Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/radio-group",
+          "explanation": "Required for building accessible radio button groups for form inputs in the frontend."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-scroll-area",
+      "Package version": "^1.1.0",
+      "Functionality/APIs": "Provides an accessible and customizable scroll area UI component.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI ScrollArea Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/scroll-area",
+          "explanation": "Essential for understanding the API and props for creating accessible scrollable areas in the UI."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-select",
+      "Package version": "^2.1.1",
+      "Functionality/APIs": "Provides an accessible and customizable select UI component.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Select Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/select",
+          "explanation": "Crucial for understanding how to implement and customize accessible select dropdowns."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-separator",
+      "Package version": "^1.1.0",
+      "Functionality/APIs": "Provides an accessible and customizable separator UI component.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Separator Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/separator",
+          "explanation": "Important for understanding how to use the separator for visual division in the UI, ensuring accessibility."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-slider",
+      "Package version": "^1.2.0",
+      "Functionality/APIs": "Provides an accessible and customizable slider UI component.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Slider Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/slider",
+          "explanation": "Essential for implementing customizable and accessible slider components for input."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-slot",
+      "Package version": "^1.1.0",
+      "Functionality/APIs": "A utility component to render children in a specific location.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Slot Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/slot",
+          "explanation": "Necessary for understanding how to use the Slot component for flexible UI composition."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-switch",
+      "Package version": "^1.1.0",
+      "Functionality/APIs": "Provides an accessible and customizable switch UI component.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Switch Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/switch",
+          "explanation": "Crucial for understanding the API and accessibility features of the switch component."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-tabs",
+      "Package version": "^1.1.0",
+      "Functionality/APIs": "Provides accessible and customizable tab UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Tabs Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/tabs",
+          "explanation": "Essential for using and customizing accessible tab components for organizing content."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-toast",
+      "Package version": "^1.2.1",
+      "Functionality/APIs": "Provides accessible and customizable toast UI components for notifications.",
+      "which part of the repo it is used in": "Frontend (UI components, notifications)",
+      "documentation": [
+        {
+          "title": "Radix UI Toast Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/toast",
+          "explanation": "Necessary for understanding how to implement and customize accessible toast notifications."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-toggle",
+      "Package version": "^1.1.0",
+      "Functionality/APIs": "Provides an accessible and customizable toggle UI component.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Toggle Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/toggle",
+          "explanation": "Important for understanding how to use and customize the accessible toggle component."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-toggle-group",
+      "Package version": "^1.1.0",
+      "Functionality/APIs": "Provides an accessible and customizable toggle group UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI ToggleGroup Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/toggle-group",
+          "explanation": "Essential for implementing accessible toggle groups for controlling related settings or states."
+        }
+      ]
+    },
+    {
+      "Package name": "@radix-ui/react-tooltip",
+      "Package version": "^1.1.4",
+      "Functionality/APIs": "Provides accessible and customizable tooltip UI components.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Radix UI Tooltip Documentation",
+          "url": "https://www.radix-ui.com/docs/primitives/components/tooltip",
+          "explanation": "Essential for understanding how to configure and customize tooltips for accessibility and styling."
+        }
+      ]
+    },
+    {
+      "Package name": "@tanstack/react-query",
+      "Package version": "^5.56.2",
+      "Functionality/APIs": "A powerful library for fetching, caching, and updating asynchronous data in React applications.",
+      "which part of the repo it is used in": "Frontend (data fetching and management)",
+      "documentation": [
+        {
+          "title": "TanStack React Query Documentation",
+          "url": "https://tanstack.com/query/latest",
+          "explanation": "Crucial for understanding how to effectively fetch, cache, and manage data in the frontend using React Query."
+        }
+      ]
+    },
+    {
+      "Package name": "class-variance-authority",
+      "Package version": "^0.7.1",
+      "Functionality/APIs": "A utility for creating composable class names, which are very common in modern React component styling, especially with Tailwind.",
+      "which part of the repo it is used in": "Frontend (styling)",
+      "documentation": [
+        {
+          "title": "Class Variance Authority Documentation",
+          "url": "https://cva.style/",
+          "explanation": "Important for learning how to create reusable and composable class name variations for styling components."
+        }
+      ]
+    },
+    {
+      "Package name": "clsx",
+      "Package version": "^2.1.1",
+      "Functionality/APIs": "A utility for conditionally joining class names together, creating dynamic class strings.",
+      "which part of the repo it is used in": "Frontend (styling)",
+      "documentation": [
+        {
+          "title": "clsx Documentation",
+          "url": "https://github.com/lukeed/clsx",
+          "explanation": "Essential for understanding how to conditionally apply class names to elements for dynamic styling."
+        }
+      ]
+    },
+    {
+      "Package name": "cmdk",
+      "Package version": "^1.0.0",
+      "Functionality/APIs": "A command menu component, likely for providing search or quick actions within the UI.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "cmdk Documentation",
+          "url": "https://cmdk.pavel.dev/",
+          "explanation": "Required for implementing and customizing the command menu component for search and quick actions."
+        }
+      ]
+    },
+    {
+      "Package name": "date-fns",
+      "Package version": "^3.6.0",
+      "Functionality/APIs": "A modern JavaScript date utility library that provides many functions for date manipulation and formatting.",
+      "which part of the repo it is used in": "Frontend (date manipulation and formatting)",
+      "documentation": [
+        {
+          "title": "date-fns Documentation",
+          "url": "https://date-fns.org/",
+          "explanation": "Necessary for understanding the various date manipulation and formatting functions available for consistent date handling."
+        }
+      ]
+    },
+    {
+      "Package name": "embla-carousel-react",
+      "Package version": "^8.3.0",
+      "Functionality/APIs": "React components for creating accessible and customizable carousels (sliders).",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Embla Carousel React Documentation",
+          "url": "https://www.embla-carousel.com/react/",
+          "explanation": "Essential for creating and customizing carousels, including accessibility and behavior configuration."
+        }
+      ]
+    },
+    {
+      "Package name": "input-otp",
+      "Package version": "^1.2.4",
+      "Functionality/APIs": "A component for handling one-time password (OTP) input.",
+      "which part of the repo it is used in": "Frontend (UI components, potentially authentication)",
+      "documentation": [
+        {
+          "title": "input-otp Documentation",
+          "url": "https://www.npmjs.com/package/input-otp",
+          "explanation": "Understanding the component's API and configuration options is important for implementing OTP input correctly."
+        }
+      ]
+    },
+    {
+      "Package name": "lucide-react",
+      "Package version": "^0.462.0",
+      "Functionality/APIs": "React components for a wide range of icons.",
+      "which part of the repo it is used in": "Frontend (icons)",
+      "documentation": [
+        {
+          "title": "Lucide React Documentation",
+          "url": "https://lucide.dev/",
+          "explanation": "Crucial for finding the right icons and understanding how to use and style them within the React application."
+        }
+      ]
+    },
+    {
+      "Package name": "next-themes",
+      "Package version": "^0.3.0",
+      "Functionality/APIs": "A library to handle themes in a React application.",
+      "which part of the repo it is used in": "Frontend (theme management, dark/light mode)",
+      "documentation": [
+        {
+          "title": "Next Themes Documentation",
+          "url": "https://github.com/pacocoursey/next-themes",
+          "explanation": "Essential for understanding how to configure and implement theme switching, including dark/light mode, using `next-themes`."
+        }
+      ]
+    },
+    {
+      "Package name": "react-day-picker",
+      "Package version": "^8.10.1",
+      "Functionality/APIs": "A React component for selecting dates, offering a calendar UI.",
+      "which part of the repo it is used in": "Frontend (UI components, date selection)",
+      "documentation": [
+        {
+          "title": "React Day Picker Documentation",
+          "url": "https://react-day-picker.js.org/",
+          "explanation": "Crucial for understanding how to customize the calendar UI, handle date selections, and integrate it seamlessly into the frontend."
+        }
+      ]
+    },
+    {
+      "Package name": "react-hook-form",
+      "Package version": "^7.53.0",
+      "Functionality/APIs": "A performant, flexible and extensible forms with easy to use validation.",
+      "which part of the repo it is used in": "Frontend (form management)",
+      "documentation": [
+        {
+          "title": "React Hook Form Documentation",
+          "url": "https://www.react-hook-form.com/",
+          "explanation": "Essential for implementing and validating forms efficiently, managing form state, and handling submissions within the React application."
+        }
+      ]
+    },
+    {
+      "Package name": "react-resizable-panels",
+      "Package version": "^2.1.3",
+      "Functionality/APIs": "A React library to create resizable panels or split views in your UI.",
+      "which part of the repo it is used in": "Frontend (UI components, panel layout)",
+      "documentation": [
+        {
+          "title": "React Resizable Panels Documentation",
+          "url": "https://github.com/szhsin/react-resizable-panels",
+          "explanation": "Necessary for understanding how to configure resizable panels, handle panel resizing events, and customize the panel layout."
+        }
+      ]
+    },
+    {
+      "Package name": "react-router-dom",
+      "Package version": "^6.26.2",
+      "Functionality/APIs": "A library for routing and navigation in React applications. Allows building multi-page applications.",
+      "which part of the repo it is used in": "Frontend (routing, navigation)",
+      "documentation": [
+        {
+          "title": "React Router Documentation",
+          "url": "https://reactrouter.com/en/main",
+          "explanation": "Fundamental for setting up routes, handling navigation, and managing the application's structure."
+        }
+      ]
+    },
+    {
+      "Package name": "recharts",
+      "Package version": "^2.12.7",
+      "Functionality/APIs": "A composable charting library built on React. Supports many chart types.",
+      "which part of the repo it is used in": "Frontend (data visualization)",
+      "documentation": [
+        {
+          "title": "Recharts Documentation",
+          "url": "https://recharts.org/en-US/",
+          "explanation": "Essential for learning how to create different chart types, customize their appearance, and integrate them with the application's data."
+        }
+      ]
+    },
+    {
+      "Package name": "sonner",
+      "Package version": "^1.5.0",
+      "Functionality/APIs": "A toast notification library for React. Used for displaying notifications to the user.",
+      "which part of the repo it is used in": "Frontend (UI, notifications)",
+      "documentation": [
+        {
+          "title": "Sonner Documentation",
+          "url": "https://sonner.emilkowalski.com/",
+          "explanation": "Important for understanding how to trigger and customize toast notifications, manage their appearance, and provide feedback to the user."
+        }
+      ]
+    },
+    {
+      "Package name": "tailwind-merge",
+      "Package version": "^2.5.2",
+      "Functionality/APIs": "A utility for merging Tailwind CSS class names, handling conflicts and overrides.",
+      "which part of the repo it is used in": "Frontend (styling)",
+      "documentation": [
+        {
+          "title": "Tailwind Merge Documentation",
+          "url": "https://github.com/dcastil/tailwind-merge",
+          "explanation": "Necessary for ensuring Tailwind CSS classes are merged correctly, preventing styling conflicts, and maintaining consistent styling."
+        }
+      ]
+    },
+    {
+      "Package name": "tailwindcss-animate",
+      "Package version": "^1.0.7",
+      "Functionality/APIs": "Adds animation utilities to Tailwind CSS.",
+      "which part of the repo it is used in": "Frontend (styling)",
+      "documentation": [
+        {
+          "title": "Tailwind CSS Animate Documentation",
+          "url": "https://github.com/galving/tailwindcss-animate",
+          "explanation": "Crucial for understanding how to add and customize animations using Tailwind CSS classes, enhancing the user interface with subtle effects."
+        }
+      ]
+    },
+    {
+      "Package name": "vaul",
+      "Package version": "^0.9.3",
+      "Functionality/APIs": "A component library, potentially similar to Radix UI, providing accessible and customizable UI elements.",
+      "which part of the repo it is used in": "Frontend (UI components)",
+      "documentation": [
+        {
+          "title": "Vaul Documentation",
+          "url": "https://vaul.emilkowalski.com/",
+          "explanation": "Essential for understanding how to use and customize the UI components, ensuring accessibility and consistent design throughout the application."
+        }
+      ]
+    },
+    {
+      "Package name": "zod",
+      "Package version": "^3.23.8",
+      "Functionality/APIs": "A TypeScript-first schema validation library. Defines data structures and validates data against them.",
+      "which part of the repo it is used in": "Frontend (data validation)",
+      "documentation": [
+        {
+          "title": "Zod Documentation",
+          "url": "https://zod.dev/",
+          "explanation": "Fundamental for defining data schemas, validating data, and ensuring data integrity within the frontend application."
+        }
+      ]
+    },
+    {
+      "Package name": "@eslint/js",
+      "Package version": "^9.9.0",
+      "Functionality/APIs": "Recommended configurations for ESLint.",
+      "which part of the repo it is used in": "Frontend (code linting)",
+      "documentation": [
+        {
+          "title": "ESLint Documentation",
+          "url": "https://eslint.org/docs/latest/",
+          "explanation": "Provides information on configuring ESLint, rules, and best practices for code linting in the frontend."
+        }
+      ]
+    },
+    {
+      "Package name": "@tailwindcss/typography",
+      "Package version": "^0.5.15",
+      "Functionality/APIs": "Adds typography styles to Tailwind CSS for better readability.",
+      "which part of the repo it is used in": "Frontend (styling)",
+      "documentation": [
+        {
+          "title": "@tailwindcss/typography Plugin Documentation",
+          "url": "https://tailwindcss.com/docs/typography-plugin",
+          "explanation": "Explains how to use the typography plugin to style HTML content with Tailwind CSS classes."
+        }
+      ]
+    },
+    {
+      "Package name": "@types/node",
+      "Package version": "^22.5.5",
+      "Functionality/APIs": "Type definitions for Node.js.",
+      "which part of the repo it is used in": "Frontend (development)",
+      "documentation": [
+        {
+          "title": "@types/node on npm",
+          "url": "https://www.npmjs.com/package/@types/node",
+          "explanation": "Provides type definitions for Node.js, enabling type checking and improved code completion."
+        }
+      ]
+    },
+    {
+      "Package name": "@types/react",
+      "Package version": "^18.3.3",
+      "Functionality/APIs": "Type definitions for React.",
+      "which part of the repo it is used in": "Frontend (development)",
+      "documentation": [
+        {
+          "title": "@types/react on npm",
+          "url": "https://www.npmjs.com/package/@types/react",
+          "explanation": "Provides type definitions for React components and hooks, enabling type checking in React projects."
+        }
+      ]
+    },
+    {
+      "Package name": "@types/react-dom",
+      "Package version": "^18.3.0",
+      "Functionality/APIs": "Type definitions for React DOM.",
+      "which part of the repo it is used in": "Frontend (development)",
+      "documentation": [
+        {
+          "title": "@types/react-dom on npm",
+          "url": "https://www.npmjs.com/package/@types/react-dom",
+          "explanation": "Provides type definitions for React DOM elements and APIs, enabling type checking in React DOM."
+        }
+      ]
+    },
+    {
+      "Package name": "globals",
+      "Package version": "^15.9.0",
+      "Functionality/APIs": "Provides a list of global variables for ESLint.",
+      "which part of the repo it is used in": "Frontend (code linting)",
+      "documentation": [
+        {
+          "title": "globals on npm",
+          "url": "https://www.npmjs.com/package/globals",
+          "explanation": "Describes the usage of `globals` package to define global variables in ESLint configuration."
+        }
+      ]
+    },
+    {
+      "Package name": "lovable-tagger",
+      "Package version": "^1.1.3",
+      "Functionality/APIs": "Likely a custom package, potentially related to the 'Lovable' platform mentioned in README.  Could be used for tagging or labeling functionality.",
+      "which part of the repo it is used in": "Unknown - likely related to the Lovable platform",
+      "documentation": [
+        {
+          "title": "Assuming a custom package, documentation unavailable.",
+          "url": "N/A",
+          "explanation": "Without access to the package's source code or internal documentation, no specific link can be provided. Consult internal project documentation."
+        }
+      ]
+    },
+    {
+      "Package name": "yfinance",
+      "Package version": "N/A",
+      "Functionality/APIs": "Python library to fetch stock data from Yahoo Finance",
+      "which part of the repo it is used in": "Backend (fetching stock data - main.py)",
+      "documentation": [
+        {
+          "title": "yfinance Documentation",
+          "url": "https://pypi.org/project/yfinance/",
+          "explanation": "Explains how to install and use yfinance to retrieve historical stock data from Yahoo Finance for backend processes."
+        }
+      ]
+    },
+    {
+      "Package name": "fastapi",
+      "Package version": "N/A",
+      "Functionality/APIs": "A modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.",
+      "which part of the repo it is used in": "Backend (API - main.py)",
+      "documentation": [
+        {
+          "title": "FastAPI Documentation",
+          "url": "https://fastapi.tiangolo.com/",
+          "explanation": "Provides a comprehensive guide to building RESTful APIs with FastAPI, including routing, data validation, and middleware."
+        }
+      ]
+    },
+    {
+      "Package name": "uvicorn",
+      "Package version": "N/A",
+      "Functionality/APIs": "An ASGI web server implementation for Python, used to run FastAPI applications.",
+      "which part of the repo it is used in": "Backend (likely used for running the API - main.py)",
+      "documentation": [
+        {
+          "title": "Uvicorn Documentation",
+          "url": "https://www.uvicorn.org/",
+          "explanation": "Details on how to run and configure Uvicorn to serve FastAPI applications, including deployment and performance tuning."
+        }
+      ]
+    },
+    {
+      "Package name": "pandas",
+      "Package version": "N/A",
+      "Functionality/APIs": "A powerful data analysis and manipulation library for Python.",
+      "which part of the repo it is used in": "Backend (data manipulation - main.py)",
+      "documentation": [
+        {
+          "title": "pandas Documentation",
+          "url": "https://pandas.pydata.org/docs/",
+          "explanation": "Crucial for understanding pandas DataFrames, Series, and data manipulation techniques used in the backend."
+        }
+      ]
+    },
+    {
+      "Package name": "requests",
+      "Package version": "2.31.0",
+      "Functionality/APIs": "A Python library for making HTTP requests. Used to interact with web APIs.",
+      "which part of the repo it is used in": "Backend (fetching news articles - stock_news.py, dl.py)",
+      "documentation": [
+        {
+          "title": "requests Documentation",
+          "url": "https://requests.readthedocs.io/en/latest/",
+          "explanation": "Important for understanding how to make GET/POST requests, handle responses, and manage sessions when fetching news articles."
+        }
+      ]
+    },
+    {
+      "Package name": "google-generativeai",
+      "Package version": "0.3.2",
+      "Functionality/APIs": "Python library for interacting with Google's Generative AI models (like Gemini).  Used for generating questions from news articles.",
+      "which part of the repo it is used in": "Backend (generating questions,  - stock_news.py)",
+      "documentation": [
+        {
+          "title": "Google Generative AI for Python Documentation",
+          "url": "https://ai.google.dev/tutorials/setup",
+          "explanation": "Essential for learning how to authenticate, access Gemini, and generate content based on the news article data."
+        }
+      ]
+    },
+    {
+      "Package name": "agno",
+      "Package version": ">=1.1.3",
+      "Functionality/APIs": "Likely a custom library related to the overall project, possibly for creating agents or knowledge bases.  Includes functionality for embedding, vector databases, and agent interactions.",
+      "which part of the repo it is used in": "Backend (stock news agent, knowledge base - stock_news_agent.py)",
+      "documentation": [
+        {
+          "title": "Agno Documentation (Assuming Internal)",
+          "url": "N/A",
+          "explanation": "Since this is a custom/internal library, documentation should be internal as well."
+        }
+      ]
+    },
+    {
+      "Package name": "psycopg",
+      "Package version": "3.1.18",
+      "Functionality/APIs": "A PostgreSQL database adapter for Python.",
+      "which part of the repo it is used in": "Backend (database interaction - stock_news_agent.py)",
+      "documentation": [
+        {
+          "title": "psycopg Documentation",
+          "url": "https://www.psycopg.org/docs/index.html",
+          "explanation": "Necessary for understanding how to connect to the PostgreSQL database, execute queries, and handle data within the agent."
+        }
+      ]
+    },
+    {
+      "Package name": "psycopg-binary",
+      "Package version": "3.1.18",
+      "Functionality/APIs": "A version of Psycopg that includes pre-compiled binaries, making installation easier.",
+      "which part of the repo it is used in": "Backend (database interaction - stock_news_agent.py)",
+      "documentation": [
+        {
+          "title": "psycopg Documentation",
+          "url": "https://www.psycopg.org/docs/index.html",
+          "explanation": "Provides the same functionalities as psycopg. Refer to the main psycopg documentation."
+        }
+      ]
+    },
+    {
+      "Package name": "json",
+      "Package version": "N/A",
+      "Functionality/APIs": "Python built-in for working with JSON data.",
+      "which part of the repo it is used in": "Backend (loading and saving data - stock_news.py, stock_news_agent.py)",
+      "documentation": [
+        {
+          "title": "json Documentation",
+          "url": "https://docs.python.org/3/library/json.html",
+          "explanation": "Understanding the json library helps to serialize and deserialize JSON data, for example when loading saved questions."
+        }
+      ]
+    },
+    {
+      "Package name": "pathlib",
+      "Package version": "N/A",
+      "Functionality/APIs": "Python built-in for working with file paths in an object-oriented way.",
+      "which part of the repo it is used in": "Backend (file path operations - stock_news.py, stock_news_agent.py)",
+      "documentation": [
+        {
+          "title": "pathlib Documentation",
+          "url": "https://docs.python.org/3/library/pathlib.html",
+          "explanation": "Important for easily managing file paths across different operating systems."
+        }
+      ]
+    },
+    {
+      "Package name": "google.generativeai",
+      "Package version": "N/A",
+      "Functionality/APIs": "Python library to use Google's Gemini models.",
+      "which part of the repo it is used in": "Backend (generating questions - stock_news.py, stock_news_agent.py)",
+      "documentation": [
+        {
+          "title": "Google Generative AI for Python Documentation",
+          "url": "https://ai.google.dev/tutorials/setup",
+          "explanation": "Essential for learning how to authenticate, access Gemini, and generate content based on the news article data."
+        }
+      ]
+    },
+    {
+      "Package name": "os",
+      "Package version": "N/A",
+      "Functionality/APIs": "Python built-in for interacting with the operating system, including environment variables.",
+      "which part of the repo it is used in": "Backend (stock_news.py, stock_news_agent.py)",
+      "documentation": [
+        {
+          "title": "os Documentation",
+          "url": "https://docs.python.org/3/library/os.html",
+          "explanation": "Critical for accessing environment variables (like API keys) and interacting with the file system."
+        }
+      ]
+    },
+    {
+      "Package name": "datetime",
+      "Package version": "N/A",
+      "Functionality/APIs": "Python built-in for working with dates and times.",
+      "which part of the repo it is used in": "Backend (stock_news.py)",
+      "documentation": [
+        {
+          "title": "datetime - Basic date and time types",
+          "url": "https://docs.python.org/3/library/datetime.html",
+          "explanation": "Essential for understanding how to manipulate and format date and time objects within the stock_news.py script."
+        }
+      ]
+    },
+    {
+      "Package name": "typing",
+      "Package version": "N/A",
+      "Functionality/APIs": "Python built-in for type hinting.",
+      "which part of the repo it is used in": "Backend (stock_news.py)",
+      "documentation": [
+        {
+          "title": "typing — Support for type hints",
+          "url": "https://docs.python.org/3/library/typing.html",
+          "explanation": "Crucial for understanding how to use type hints to improve code readability and maintainability in stock_news.py."
+        }
+      ]
+    },
+    {
+      "Package name": "sqlalchemy",
+      "Package version": "N/A",
+      "Functionality/APIs": "SQL toolkit and Object-Relational Mapper for Python, often used for database interactions.",
+      "which part of the repo it is used in": "Backend (database interactions - stock_news_agent.py)",
+      "documentation": [
+        {
+          "title": "SQLAlchemy Documentation",
+          "url": "https://docs.sqlalchemy.org/",
+          "explanation": "Necessary for understanding how to interact with the database, define models, and execute queries in stock_news_agent.py."
+        }
+      ]
+    },
+    {
+      "Package name": "rich",
+      "Package version": "N/A",
+      "Functionality/APIs": "Provides enhanced console output with colors, styles, and more.  Used for more visually appealing logging and user interaction.",
+      "which part of the repo it is used in": "Backend (console output - stock_news_agent.py)",
+      "documentation": [
+        {
+          "title": "Rich Documentation",
+          "url": "https://rich.readthedocs.io/en/stable/",
+          "explanation": "Essential for learning how to customize console output with colors and styles in stock_news_agent.py for better logging."
+        }
+      ]
+    },
+    {
+      "Package name": "hashlib",
+      "Package version": "N/A",
+      "Functionality/APIs": "Python's module for cryptographic hashing, used to create unique identifiers.",
+      "which part of the repo it is used in": "Backend (generating unique document IDs - stock_news_agent.py)",
+      "documentation": [
+        {
+          "title": "hashlib — Secure hashes and message digests",
+          "url": "https://docs.python.org/3/library/hashlib.html",
+          "explanation": "Important for understanding how to generate secure and unique document IDs within stock_news_agent.py."
+        }
+      ]
+    }
+  ]
+}
