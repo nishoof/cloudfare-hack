@@ -6,6 +6,7 @@ import { ArrowLeft, Github } from "lucide-react"
 import { parseGitHubUrl } from "@/lib/github-utils"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import VideoPlayer from "@/components/ui/videoPlayer"
 
 export default function RepoPage() {
   const searchParams = useSearchParams()
@@ -13,6 +14,7 @@ export default function RepoPage() {
   const url = searchParams.get("url")
   const [repoName, setRepoName] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const streamUrl = "https://stream.mux.com/AWWy02FYNOe02MWgtEBJUsXoNHHGyhR8DYtHBZLBMeGdI.m3u8"
 
   useEffect(() => {
     if (!url) {
@@ -39,7 +41,7 @@ export default function RepoPage() {
 
   return (
     <div className="container mx-auto py-10 px-4">
-      <Card className="max-w-md mx-auto">
+      <Card className="max-w-md mx-auto mb-12">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Github className="h-6 w-6" />
@@ -55,7 +57,16 @@ export default function RepoPage() {
           </Button>
         </CardContent>
       </Card>
+
+      <div className="max-w-3xl mx-auto mt-10">
+        <h2 className="text-2xl font-bold mb-4 text-center">Onboarding Video</h2>
+        <div className="aspect-video overflow-hidden bg-black/5 rounded-xl shadow-xl">
+          <VideoPlayer
+            streamUrl={streamUrl}
+            className="w-full h-full"
+          />
+        </div>
+      </div>
     </div>
   )
 }
-
