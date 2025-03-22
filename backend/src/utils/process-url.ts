@@ -1,4 +1,4 @@
-import { processDependencies } from "../Dep-Agent";
+import { processDependencies } from "./dep-agent";
 import { analyzeGithubRepo } from "./github-repo-analyzer";
 
 export async function processURL(githubUrl: string) {

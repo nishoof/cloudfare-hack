@@ -1,13 +1,12 @@
-import cors from "cors";
 import dotenv from "dotenv";
-import express from "express";
-import { test3 } from "./test";
-
-// Load environment variables
 dotenv.config();
+import cors from "cors";
+import express, { type Request, type Response } from "express";
+import { generateOnboardingScript } from "./utils/gemini_onboarding_script";
+import { processURL } from "./utils/process-url";
 
 const app = express();
-// const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
@@ -18,14 +17,34 @@ app.get("/", (_req, res) => {
 	res.json({ message: "Welcome to the API" });
 });
 
+app.post("/onboardingScript", (req: Request, res: Response) => {
+	const githubUrl = req.body.githubUrl;
+	processURL(githubUrl)
+		.then((result) => {
+			console.log("🚀 Generated onboarding script");
+			return generateOnboardingScript({
+				dependencies: result.dependencies,
+			});
+		})
+		.then((response) => {
+			console.log("🚀 Generated onboarding script");
+			if (!response) {
+				console.error("Failed to generate onboarding script");
+				return;
+			}
+
+			const onboardingScript = response.text();
+
+			res.json({ onboardingScript });
+		});
+});
+
 // Health check endpoint
 app.get("/health", (_req, res) => {
 	res.json({ status: "healthy" });
 });
 
 // Start server
-/* app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-}); */
-
-test3();
+app.listen(port, () => {
+	console.log(`Server is running on port ${port}`);
+});

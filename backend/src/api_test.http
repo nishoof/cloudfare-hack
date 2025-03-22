@@ -1,0 +1,14 @@
+@base_url = http://localhost:3000
+@token = 
+
+### test api ###
+GET {{base_url}}
+
+### onboardingScript ###
+POST {{base_url}}/onboardingScript
+Content-Type: application/json
+
+{
+    "githubUrl": "https://github.com/PaulGustafson/clone-o-matic-45/"
+}
+
